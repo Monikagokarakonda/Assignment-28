@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i,j,flag;
+clrscr();
+printf("Enter n value");
+scanf("%d",&n);
+printf("prime numbers between 1 and %d",n);
+for(i=2;i<=n;i++)
+{
+flag=1;
+for(j=2;j<=i/2;j++)
+{
+if(i%j==0)
+{
+flag=0;
+break;
+}
+}
+if(flag==1)
+printf("\n %d is a prime",i);
+else
+printf("\n %d is not a prime",i);
+}
+}
